@@ -1,0 +1,16 @@
+.block {
+	background-color: black;
+	color: white;
+}
+
+.name {
+	font-size: 120px;
+	text-align: left;
+	margin-left: 150px;
+}
+
+#role {
+	font-size: 60px;
+	text-align: right;
+	margin-right: 150px;
+}
