@@ -3,7 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeAmericas, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import AboutMe from "../AboutMe";
-import plane from "../../assets/images/bluePlane.png";
 import "./style.css";
 
 const Main = () => {
