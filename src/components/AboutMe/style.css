@@ -1,0 +1,9 @@
+.aboutMeSection {
+	display: flex;
+}
+
+#me {
+	border: 2px gray solid;
+	border-radius: 50px;
+	width: 300px;
+}
