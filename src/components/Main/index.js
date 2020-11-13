@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "./style.css";
 
 const Main = () => {
+	const [style, setStyle] = useState("none");
+
 	const controls = useAnimation();
 
-	const animateName = (event) => {
+	const animateName = () => {
+		setTimeout(() => displayBlock(), 2000);
 		controls.start({
 			y: "-100%",
 			transition: {duration: 1}
 		})
 	};
+
+	const displayBlock = () => {
+		setStyle("block")
+		console.log("done")
+	}
 
 	return(
 		<div className="container">
@@ -20,6 +28,9 @@ const Main = () => {
 				<button id="enter" onClick={animateName}>Enter</button>
 				<h4 id="role">Full Stack Developer.</h4>
 			</motion.div>
+			<div style={{display: style}}>
+				Hello
+			</div>
 		</div>
 
 
