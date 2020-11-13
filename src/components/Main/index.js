@@ -23,18 +23,17 @@ const Main = () => {
 		setTimeout(() => displayBlock(), 1200);
 	};
 
-	// shows the div below
+	// hides the main block and brings the AboutMe component into view by setting the opacity to 1
 	const displayBlock = () => {
 		setMain("none")
 		setStyle("1")
-		console.log("done")
 	}
 
 	return(
 		<div className="container">
 			<motion.div id="mainBlock" animate={controls} style={{display: main}}>
 				<h1 className="name">Sean</h1>
-				<h1 className="name">Belverstone.</h1>
+				<h1 className="name">Belverstone</h1>
 
 				<motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}} id="enterDiv">
 					<FontAwesomeIcon icon={faGlobeAmericas} id="enter" onClick={animateName}></FontAwesomeIcon>
