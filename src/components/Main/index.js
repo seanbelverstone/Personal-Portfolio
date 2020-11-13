@@ -35,7 +35,7 @@ const Main = () => {
 				<h1 className="name">Sean</h1>
 				<h1 className="name">Belverstone</h1>
 
-				<motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}} id="enterDiv">
+				<motion.button whileHover={{ scale: 1.1}} infinite whileTap={{ scale: 0.9}} id="enterDiv">
 					<FontAwesomeIcon icon={faGlobeAmericas} id="enter" onClick={animateName}></FontAwesomeIcon>
 				</motion.button>
 
