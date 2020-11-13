@@ -23,8 +23,8 @@ const Main = () => {
 
 	// shows the div below
 	const displayBlock = () => {
-		setStyle("1")
 		setMain("none")
+		setStyle("1")
 		console.log("done")
 	}
 
