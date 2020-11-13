@@ -1,7 +1,18 @@
-.block {
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.nameBlock, .roleBlock {
 	background-color: black;
 	color: white;
+	width: 50%;
 }
+
+.roleBlock {
+	align-self: flex-end;
+}
+
 
 .name {
 	font-size: 120px;
