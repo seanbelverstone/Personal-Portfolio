@@ -6,7 +6,7 @@ class AboutMe extends React.Component {
 	render() {
 		return(
 			<div className="aboutMeSection">
-				<h2>From Chef to Coder</h2>
+				<p id="title">From Chef to Coder</p>
 				<img src={me} alt="me" id="me" />
 			</div>
 		)
