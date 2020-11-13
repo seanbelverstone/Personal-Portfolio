@@ -16,10 +16,27 @@
 	font-size: 120px;
 	text-align: left;
 	margin-left: 150px;
+	font-weight: 100;
+}
+
+#enterDiv {
+	background-color: inherit;
+	border: none;
 }
 
 #enter {
 	align-self: center;
+	color: cornflowerblue;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	bottom: 6%;
+}
+
+#enter:hover {
+	transition: color 0.2s ease-in-out;
+	color: #8cb9f3;
+
 }
 
 #role {
@@ -27,4 +44,5 @@
 	align-self: flex-end;
 	font-size: 60px;
 	margin-right: 150px;
+	font-weight: 100;
 }

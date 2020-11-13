@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import AboutMe from "../AboutMe";
 import "./style.css";
 
@@ -33,7 +35,11 @@ const Main = () => {
 			<motion.div id="mainBlock" animate={controls} style={{display: main}}>
 				<h1 className="name">Sean</h1>
 				<h1 className="name">Belverstone.</h1>
-				<button id="enter" onClick={animateName}>Enter</button>
+
+				<motion.button whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}} id="enterDiv">
+					<FontAwesomeIcon icon={faGlobeAmericas} id="enter" onClick={animateName}></FontAwesomeIcon>
+				</motion.button>
+
 				<h4 id="role">Full Stack Developer.</h4>
 			</motion.div>
 			<div style={{
