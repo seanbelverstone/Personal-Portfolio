@@ -33,8 +33,8 @@ const Main = () => {
 	const variants = {
 		visible: {
 			opacity: [0, 0, 1, 0, 0],
-			scale: [15, 15, 15, 15, 0],
-			rotate: 360,
+			scale: [17, 17, 17, 17, 17],
+			rotate: 720,
 		},
 		hidden: {opacity: 0}
 	}
@@ -50,12 +50,12 @@ const Main = () => {
 				</motion.button>
 
 				<motion.div 
-					id="planeDiv" 
+					id="spinner" 
 					initial="hidden"
 					animate={"visible"}
 					variants={variants} 	
 					transition={{
-						duration: 1.5, 
+						duration: 4, 
 						loop: Infinity,
 						delay: 1,
 						repeatType: "reverse",
