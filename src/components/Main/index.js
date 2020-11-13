@@ -4,9 +4,10 @@ import AboutMe from "../AboutMe";
 import "./style.css";
 
 const Main = () => {
-	// Using hooks, creating a state of style to be "none"
+	// Using hooks, creating a state of style to be "0"
 	const [style, setStyle] = useState("0");
-
+	// also making it so the main section disappears after the animation
+	const [main, setMain] = useState("block");
 
 	// controls allow us to control the animation at will
 	const controls = useAnimation();
@@ -16,19 +17,20 @@ const Main = () => {
 			y: "-100%",
 			transition: {duration: 1}
 		});
-		// Fire the displayBlock function after 2 seconds
-		setTimeout(() => displayBlock(), 2000);
+		// Fire the displayBlock function after 1.2 seconds
+		setTimeout(() => displayBlock(), 1200);
 	};
 
 	// shows the div below
 	const displayBlock = () => {
 		setStyle("1")
+		setMain("none")
 		console.log("done")
 	}
 
 	return(
 		<div className="container">
-			<motion.div id="mainBlock" animate={controls}>
+			<motion.div id="mainBlock" animate={controls} style={{display: main}}>
 				<h1 className="name">Sean</h1>
 				<h1 className="name">Belverstone.</h1>
 				<button id="enter" onClick={animateName}>Enter</button>
@@ -36,7 +38,7 @@ const Main = () => {
 			</motion.div>
 			<div style={{
 				opacity: style,
-				transition: "0.6s ease-in"
+				transition: "1s ease-in-out"
 				}}>
 				<AboutMe />
 			</div>

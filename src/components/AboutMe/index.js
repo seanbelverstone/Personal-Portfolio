@@ -2,7 +2,7 @@ import React from "react";
 import me from "../../assets/images/me.jpg"
 
 class AboutMe extends React.Component {
-	render(){
+	render() {
 		return(
 			<div>
 				<img src={me} alt="me" />
