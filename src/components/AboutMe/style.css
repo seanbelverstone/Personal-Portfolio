@@ -1,10 +1,9 @@
 .aboutMeSection {
-	display: flex;
 	justify-content: center;
 }
 
 #title {
-	font-size: 40px;
+	font-size: 50px;
 	padding: 40px;
 }
 
@@ -13,4 +12,9 @@
 	border-radius: 50px;
 	width: 300px;
 	margin: 40px;
+}
+
+#aboutText {
+	text-align: left !important;
+	font-size: 35px;
 }
