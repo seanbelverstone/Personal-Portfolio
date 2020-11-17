@@ -7,7 +7,9 @@ import "./style.css";
 
 const Main = () => {
 	// Using hooks, creating a state of style to be "0"
-	const [style, setStyle] = useState("none");
+	const [aboutMeOpacity, setAboutMeOpacity] = useState("0");
+
+	const [aboutMeDisplay, setAboutMeDisplay] = useState("none");
 	// also making it so the main section disappears after the animation
 	const [main, setMain] = useState("block");
 
@@ -19,14 +21,15 @@ const Main = () => {
 			y: "-100%",
 			transition: {duration: 1}
 		});
+		setAboutMeDisplay("block");
 		// Fire the displayBlock function after 1.2 seconds
 		setTimeout(() => displayBlock(), 1200);
 	};
 
 	// hides the main block and brings the AboutMe component into view by setting the opacity to 1
 	const displayBlock = () => {
-		setMain("none")
-		setStyle("block")
+		setMain("none");
+		setAboutMeOpacity("1");
 	}
 
 	const variants = {
@@ -67,8 +70,9 @@ const Main = () => {
 				<h4 id="role">Full Stack Developer.</h4>
 			</motion.div>
 			<div style={{
-				display: style,
-				transition: "1s ease-in-out"
+				display: aboutMeDisplay,
+				opacity: aboutMeOpacity,
+				transition: "opacity 1s ease-in-out"
 				}}>
 				<AboutMe />
 			</div>
