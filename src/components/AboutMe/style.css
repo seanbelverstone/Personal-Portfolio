@@ -10,8 +10,7 @@
 }
 
 #title {
-	font-size: 50px;
-	padding: 40px;
+	font-size: 70px;
 }
 
 #me {
@@ -24,5 +23,5 @@
 
 #aboutText {
 	text-align: left !important;
-	font-size: 35px;
+	font-size: 30px;
 }
