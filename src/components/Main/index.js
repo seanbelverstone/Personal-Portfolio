@@ -7,7 +7,7 @@ import "./style.css";
 
 const Main = () => {
 	// Using hooks, creating a state of style to be "0"
-	const [style, setStyle] = useState("0");
+	const [style, setStyle] = useState("none");
 	// also making it so the main section disappears after the animation
 	const [main, setMain] = useState("block");
 
@@ -26,7 +26,7 @@ const Main = () => {
 	// hides the main block and brings the AboutMe component into view by setting the opacity to 1
 	const displayBlock = () => {
 		setMain("none")
-		setStyle("1")
+		setStyle("block")
 	}
 
 	const variants = {
@@ -67,7 +67,7 @@ const Main = () => {
 				<h4 id="role">Full Stack Developer.</h4>
 			</motion.div>
 			<div style={{
-				opacity: style,
+				display: style,
 				transition: "1s ease-in-out"
 				}}>
 				<AboutMe />
