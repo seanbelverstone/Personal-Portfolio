@@ -1,4 +1,14 @@
+body {
+  background-color: rgb(56, 56, 56);
+}
+
 .App {
   text-align: center;
 }
 
+#particles {
+  position: absolute !important;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
