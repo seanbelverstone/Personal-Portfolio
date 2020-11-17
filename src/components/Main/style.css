@@ -8,7 +8,6 @@
 	background-color: black;
 	color: white;
 	width: 100%;
-	height: 100%;
 	z-index: 2;
 }
 
@@ -22,23 +21,32 @@
 #enterDiv {
 	background-color: inherit;
 	border: none;
-	position: relative;
-	bottom: 8%;
-
 }
 
 #enter {
 	align-self: center;
 	color: cornflowerblue;
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	position: relative;
+	z-index: 5;
 }
 
 #enter:hover {
 	transition: color 0.2s ease-in-out;
 	color: #8cb9f3;
+	z-index: 10;
+}
 
+#spinner {
+	color: rgb(50, 46, 73);
+	align-self: center;
+	position: absolute;
+	width: 30px;
+	z-index: 2;
+	left: 49%;
+	top: 64%;
+	pointer-events: none;
 }
 
 #role {
