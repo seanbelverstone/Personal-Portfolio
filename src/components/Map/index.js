@@ -43,7 +43,11 @@ const Map = () => {
 			<motion.img id="pin1" src={pin} alt="a pin" animate={controls} initial={{opacity: 0}}/>
 			<motion.img id="pin2" src={pin} alt="a pin" animate={controls} initial={{opacity: 0}}/>
 			<div id="lines" style={{opacity: opacity}}>------</div>
-			<div id="journeyText" style={{opacity: opacity}}>I moved to Austin in 2018 to be with my wife, and we since  </div>
+			<div id="journeyText" style={{opacity: opacity}}>
+				I moved to Austin in 2018 to be with my wife,
+				<br />
+				so we could start building our lives together.
+			</div>
 		</div>
 	)
 }
