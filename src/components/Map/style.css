@@ -1,9 +1,40 @@
+.mapContainer {
+	position: relative;
+}
+
 #map {
-	height: auto;
-	width: 1200px;
+	height: 100%;
+	width: 65%;
 	background-color: lightblue;
 	border-radius: 100px;
 	align-self: center;
 	padding: 30px;
 	margin-top: 40px;
+	opacity: 0.6;
+}
+
+#pin1 {
+	position: absolute;
+    top: 19%;
+    left: 46.75%;
+	width: 80px;
+	height: auto;
+}
+
+#pin2 {
+	position: absolute;
+    top: 30%;
+    left: 29.75%;
+	width: 80px;
+	height: auto;
+}
+
+#lines {
+	position: absolute;
+    font-size: 123px;
+    color: red;
+    left: 32.5%;
+    bottom: 50%;
+    transform: rotate(350deg);
+    transition: opacity 1s ease-in-out;
 }
