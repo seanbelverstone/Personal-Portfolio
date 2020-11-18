@@ -7,8 +7,10 @@ import "./style.css";
 
 const Map = () => {
 
+	// setting the opacity hook to 0
 	const [opacity, setOpacity] = useState("0");
 
+	// The controls below enable the pins and line to appear simultaneously
 	const controls = useAnimation();
 
 	const pinsEnter = () => {
@@ -32,6 +34,7 @@ const Map = () => {
 
 	}	
 
+	// passing in the desired number to set opacity, based on whether the mouse has entered or left the map container
 	const showHideText = (number) => {
 		setOpacity(number);
 	}
@@ -50,6 +53,7 @@ const Map = () => {
 					so we could start building our lives together.
 				</div>
 			</div>
+			{/* Interactive images go below */}
 			<ImageGallery />
 		</div>
 	)
