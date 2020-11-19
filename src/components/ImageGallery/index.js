@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
+import Backdrop from '@material-ui/core/Backdrop';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import tileData from "./tileData";
@@ -29,11 +30,14 @@ const useStyles = makeStyles((theme) => ({
 			'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
 			'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
 		},
-		icon: {
-		color: 'white',
+	icon: {
+	color: 'white',
+	},
+	backdrop: {
+		zIndex: theme.zIndex.drawer + 1,
+		color: '#fff',
 		},
-	}	
-));
+	}));
 
 
 // data-src={tile.img}
@@ -42,15 +46,29 @@ const useStyles = makeStyles((theme) => ({
 const ImageGallery = () => {
 	const classes = useStyles();
 
+	const [open, setOpen] = useState(false);
+	const [imgSrc, setImgSrc] = useState("")
+
+	const handleClose = () => {
+		setOpen(false);
+	};
+	const handleToggle = () => {
+		setOpen(!open);
+	};
+
 	const largeImage = (event) => {
 		// store the data-src attribute in imageTarget
-		let imageTarget = event.target.getAttribute("data-src");
+		let currentImage = event.target.getAttribute("data-src")
 
 		// if imageTarget returns null, use the farthestViewportElement instead, which is the parent essentially.
-		if (!imageTarget) {
-			imageTarget = event.target.farthestViewportElement.getAttribute("data-src");
-			console.log(imageTarget);
+		if (!currentImage) {
+			currentImage = event.target.farthestViewportElement.getAttribute("data-src");
+			console.log(imgSrc);
 		}
+		// set the state of the currentImage variable
+		setImgSrc(currentImage);
+
+		handleToggle();
 	}
 
 
@@ -65,7 +83,7 @@ const ImageGallery = () => {
 			  titlePosition="top"
 			  subtitle={tile.date}
               actionIcon={
-				//   maybe use this icon to pop a modal out and see the picture full screen?
+				//   when clicked, the backdrop shows with the image in focus
                 <IconButton aria-label={`star ${tile.title}`} className={classes.icon} onClick={largeImage} data-src={tile.img}>
                   <FontAwesomeIcon icon={faEye} data-src={tile.img}/>
                 </IconButton>
@@ -77,6 +95,10 @@ const ImageGallery = () => {
           </GridListTile>
         ))}
       </GridList>
+	  {/* this backdrop shows when the eye is clicked */}
+	  <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
+        <img src={imgSrc} alt="the same as before, just focused" style={{width: "50%"}}/>
+      </Backdrop>
     </div>
   );
 }
