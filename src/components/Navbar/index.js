@@ -12,8 +12,9 @@ const useStyles = makeStyles({
 	flexGrow: 1,
 	position: "fixed",
 	zIndex: "2",
-	boxShadow: "2px 2px 2px black"
-	
+	boxShadow: "2px 2px 2px black",
+	padding: "10px",
+	opacity: 0.9
 },
 });
 
@@ -30,9 +31,9 @@ const Navigation = () => {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Projects" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
-      <BottomNavigationAction label="About Me" icon={<FontAwesomeIcon icon={faUser} className="icons" />} />
-      <BottomNavigationAction label="Contact" icon={<FontAwesomeIcon icon={faEnvelopeOpenText} className="icons" />} />
+		<BottomNavigationAction href="#" label="Projects" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
+		<BottomNavigationAction href="#" label="About Me" icon={<FontAwesomeIcon icon={faUser} className="icons" />} />
+		<BottomNavigationAction href="#" label="Contact" icon={<FontAwesomeIcon icon={faEnvelopeOpenText} className="icons" />} />
     </BottomNavigation>
   );
 }
