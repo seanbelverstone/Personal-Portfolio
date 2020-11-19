@@ -40,9 +40,6 @@ const useStyles = makeStyles((theme) => ({
 	}));
 
 
-// data-src={tile.img}
-
-
 const ImageGallery = () => {
 	const classes = useStyles();
 
@@ -57,17 +54,19 @@ const ImageGallery = () => {
 	};
 
 	const largeImage = (event) => {
-		// store the data-src attribute in imageTarget
+		// store the data-src attribute in currentImage
 		let currentImage = event.target.getAttribute("data-src")
 
-		// if imageTarget returns null, use the farthestViewportElement instead, which is the parent essentially.
+		// if currentImage returns null, use the farthestViewportElement instead, which is the parent essentially.
 		if (!currentImage) {
 			currentImage = event.target.farthestViewportElement.getAttribute("data-src");
 			console.log(imgSrc);
 		}
-		// set the state of the currentImage variable
+		// set the state of imgSrc to equal currentImage - i do this last to ensure there aren't
+		// any errors with asynchronous code running
 		setImgSrc(currentImage);
 
+		// toggle the backdrop
 		handleToggle();
 	}
 
