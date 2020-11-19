@@ -4,7 +4,8 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import tileData from "./tileData";
 import "./style.css";
 
@@ -44,11 +45,12 @@ const ImageGallery = () => {
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              titlePosition="top"
+			  titlePosition="top"
+			  subtitle={tile.date}
               actionIcon={
 				//   maybe use this icon to pop a modal out and see the picture full screen?
                 <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-                  <StarBorderIcon />
+                  <FontAwesomeIcon icon={faEye}/>
                 </IconButton>
               }
               actionPosition="left"
