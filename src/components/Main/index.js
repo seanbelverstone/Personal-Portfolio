@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeAmericas, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import Navigation from "../Navbar";
 import AboutMe from "../AboutMe";
 import "./style.css";
 
@@ -74,6 +75,7 @@ const Main = () => {
 				opacity: aboutMeOpacity,
 				transition: "opacity 1s ease-in-out"
 				}}>
+				<Navigation />
 				<AboutMe />
 			</div>
 		</div>
