@@ -6,12 +6,14 @@
 	height: 100%;
 	width: 65%;
 	background-color: lightblue;
-	border-radius: 100px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 5px rgb(129, 129, 129);
+	border-radius: 20px 0 0 20px;
 	align-self: center;
 	padding: 30px;
 	margin-top: 80px;
 	margin-bottom: 80px;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 #pin1, #pin2, #lines, #journeyText {
@@ -19,14 +21,14 @@
 }
 
 #pin1 {
-    top: 19%;
+    top: 21%;
     left: 46.75%;
 	width: 80px;
 	height: auto;
 }
 
 #pin2 {
-    top: 30%;
+    top: 31%;
     left: 29.75%;
 	width: 80px;
 	height: auto;
