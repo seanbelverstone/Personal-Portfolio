@@ -7,37 +7,31 @@ import nessa1 from "../../assets/images/nessa1.jpg";
 import poppy1 from "../../assets/images/poppy1.jpg";
 import seanOlivia from "../../assets/images/seanOlivia.jpg";
 import wedding from "../../assets/images/wedding.jpg";
+import beach from "../../assets/images/beach.jpg";
+import beach2 from "../../assets/images/beach2.jpg";
 
 
 const tileData = [
 	{
-		img: wedding,
-		title: 'Our wedding day',
+		img: seanOlivia,
+		title: 'My wife and I',
 		featured: true
 	},
 	{
-		img: seanOlivia,
-		title: 'My wife and I'
-	},
-	{
-		img: climbing1,
-		title: 'Climbing at ABP',
-	},
-	{
-		img: bread,
-		title: 'Some bread I made'
+		img: wedding,
+		title: 'Our wedding day'
 	},
 	{
 		img: meSuit,
 		title: 'My wedding suit'
 	},
 	{
-		img: climbing2,
-		title: 'Shoes and a mask'
+		img: climbing1,
+		title: 'Climbing at Austin Bouldering Project',
 	},
 	{
-		img: coding,
-		title: 'My bootcamp certificate'
+		img: climbing2,
+		title: 'Post quarantine climbing session'
 	},
 	{
 		img: nessa1,
@@ -48,6 +42,22 @@ const tileData = [
 		img: poppy1,
 		title: 'My dog, Poppy',
 		featured: true
+	},
+	{
+		img: bread,
+		title: 'A warm loaf of bread I made'
+	},
+	{
+		img: coding,
+		title: 'Celebrating my graduation with my pets'
+	},
+	{
+		img: beach,
+		title: 'Skimming rocks in Cornwall, 2018'
+	},
+	{
+		img: beach2,
+		title: 'The beach in my hometown: Bude, Cornwall'
 	},
 
 ];
