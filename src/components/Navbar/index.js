@@ -18,6 +18,37 @@ const useStyles = makeStyles({
 },
 });
 
+const setScroll = (event) => {
+  console.log(event.view.location.hash)
+  let hash = event.view.location.hash;
+  let area;
+
+  switch (hash) {
+    case "#projects":
+      area = 1000;
+      break;
+    case "#aboutMe":
+      area = 1500;
+      break;
+    case "#contact":
+      area = 2000;
+      break;
+    default:
+      area = 0
+      break;
+  }
+  executeScroll(area)
+}
+
+const executeScroll = (area) => {
+  window.scrollTo({
+    top: area,
+    behavior: "smooth"
+  })
+
+}
+
+
 const Navigation = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -31,9 +62,10 @@ const Navigation = () => {
       showLabels
       className={classes.root}
     >
-		<BottomNavigationAction href="#" label="Projects" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
-		<BottomNavigationAction href="#" label="About Me" icon={<FontAwesomeIcon icon={faUser} className="icons" />} />
-		<BottomNavigationAction href="#" label="Contact" icon={<FontAwesomeIcon icon={faEnvelopeOpenText} className="icons" />} />
+    <BottomNavigationAction onClick={setScroll} href="#introduction" label="Introduction" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
+    <BottomNavigationAction onClick={setScroll} href="#projects" label="Projects" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
+    <BottomNavigationAction onClick={setScroll} href="#aboutMe" label="About Me" icon={<FontAwesomeIcon icon={faUser} className="icons" />} />
+    <BottomNavigationAction onClick={setScroll} href="#contacts" label="Contact" icon={<FontAwesomeIcon icon={faEnvelopeOpenText} className="icons" />} />
     </BottomNavigation>
   );
 }
