@@ -8,8 +8,14 @@ const skills = [
 	"Javascript",
 	"React",
 	"Redux",
-	"Node",
-	"Express"
+	"Node.js",
+	"Express.js",
+	"jQuery",
+	"MySQL",
+	"Sequelize",
+	"Mongo",
+	"Mongoose",
+	"PHP"
 ]
 
 class TextLooper extends React.Component {

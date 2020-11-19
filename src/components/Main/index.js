@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeAmericas, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Navigation from "../Navbar";
-import AboutMe from "../AboutMe";
+import Introduction from "../Introduction";
 import "./style.css";
 
 const Main = () => {
@@ -76,7 +76,7 @@ const Main = () => {
 				transition: "opacity 1s ease-in-out"
 				}}>
 				<Navigation />
-				<AboutMe />
+				<Introduction />
 			</div>
 		</div>
 
