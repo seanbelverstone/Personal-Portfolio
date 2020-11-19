@@ -5,9 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import blackPlane from "../../assets/images/blackPlane.png";
-import bluePlane from "../../assets/images/bluePlane.png";
-import meSuit from "../../assets/images/meSuit.jpg";
+import tileData from "./tileData";
 import "./style.css";
 
 
@@ -34,31 +32,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// possibly save this elsewhere and import it so it looks nicer
-const tileData = [
-	{
-		img: blackPlane,
-		title: 'Black Plane',
-		author: 'mee',
-	},
-	{
-		img: bluePlane,
-		title: 'blue Plane',
-		author: 'mee',	
-	},
-	{
-		img: meSuit,
-		title: 'Me in a suit',
-		author: 'mee',
-	},
-];
 
 const ImageGallery = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={200} spacing={1} className={classes.gridList}>
+      <GridList cellHeight={300} spacing={1} className={classes.gridList}>
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}>
             <img src={tile.img} alt={tile.title} />
@@ -66,6 +46,7 @@ const ImageGallery = () => {
               title={tile.title}
               titlePosition="top"
               actionIcon={
+				//   maybe use this icon to pop a modal out and see the picture full screen?
                 <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
                   <StarBorderIcon />
                 </IconButton>
