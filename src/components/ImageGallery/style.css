@@ -4,5 +4,6 @@
 
 .makeStyles-gridList-2 {
 	width: 800px !important;
-    height: auto !important;
+	height: 800px !important;
+	border-radius: 50px 0px 0px 50px;
 }

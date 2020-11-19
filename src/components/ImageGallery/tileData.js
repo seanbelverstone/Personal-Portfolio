@@ -53,7 +53,7 @@ const tileData = [
 	},
 	{
 		img: beach,
-		title: 'Skimming rocks in Cornwall, 2018'
+		title: 'Skimming rocks, 2018'
 	},
 	{
 		img: beach2,
