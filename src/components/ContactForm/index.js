@@ -6,6 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+// import Recaptcha from "react-google-invisible-recaptcha";
+// set up recaptcha
 import emailjs from "emailjs-com"
 import "./style.css";
 
