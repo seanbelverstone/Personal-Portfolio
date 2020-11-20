@@ -20,11 +20,25 @@ const useStyles = makeStyles({
 
 const Navigation = () => {
 
-  // set the hash at the end of the URL to be blank on page load
-  // useEffect(() => window.location.hash = "")
-
   const classes = useStyles();
   const [value, setValue] = useState(0);
+
+  // change the color based on the hash value
+  useEffect(() => {
+    switch(window.location.pathname) {
+      case "/projects":
+        setValue(1);
+        break;
+      case "/about":
+        setValue(2);
+        break;
+      case "/contact":
+        setValue(3);
+        break;
+      default:
+        setValue(0);
+    }
+  }, []);
 
   return (
     <BottomNavigation
