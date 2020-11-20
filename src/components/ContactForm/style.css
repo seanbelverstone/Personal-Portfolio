@@ -17,5 +17,23 @@
 
 .MuiGrid-root {
 	padding: 20px;
+}
 
+.MuiTextField-root {
+	background-color: white;
+}
+
+.outlined-basic {
+	font-family: "Cabin", sans-serif !important;
+	background-color: white;
+
+}
+
+.message {
+	width: 50%;
+	opacity: 0.9;
+}
+
+#messageLabel {
+	font-size: 18px;
 }

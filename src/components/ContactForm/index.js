@@ -26,7 +26,8 @@ const ContactForm = () => {
 				<TextField id="outlined-basic" label="Phone" variant="outlined" />
 			</Grid>
 			<Grid>
-				<TextareaAutosize id="outlined-basic" label="Message" variant="outlined" rowsMin={6} />
+				<p id="messageLabel">Enter your message below</p>
+				<TextareaAutosize id="outlined-basic" className="message" label="Message" variant="outlined" rowsMin={6} />
 			</Grid>
       	</div>
     </form>
