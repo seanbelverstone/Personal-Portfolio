@@ -15,7 +15,7 @@
 .MuiGrid-item {
 	margin: 200px 15% 0 15%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .MuiGrid-root {

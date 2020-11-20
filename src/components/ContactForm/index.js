@@ -5,21 +5,9 @@ import Grid from "@material-ui/core/Grid";
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-// import Recaptcha from "react-google-invisible-recaptcha";
-// set up recaptcha
+import Recaptcha from "react-google-invisible-recaptcha";
 import emailjs from "emailjs-com"
 import "./style.css";
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     '& .MuiTextField-root': {
-//       margin: theme.spacing(1),
-//       width: 200,
-//     },
-//   },
-// }));
-
-// const classes = useStyles();
 
 class ContactForm extends React.Component {
 	constructor(props) {
@@ -60,6 +48,12 @@ class ContactForm extends React.Component {
 			});
 		}
 
+	// Begins validation of user for recaptcha
+	checkRecaptcha = () => {
+		this.recaptcha.execute();
+	}
+
+	// if recaptcha is successful, fire this function
 	sendEmail = () => {
 		// Store the state into an object
 		const data = {
@@ -69,7 +63,7 @@ class ContactForm extends React.Component {
       		message: this.state.formControls.message.value
 		};
 		// Use emailjs to send an email
-		emailjs.send("gmail", "portfolio_template", data, "user_hCtShpO14VJ1zNpxU2xRi")
+		emailjs.send("gmail", "portfolio_template", data, process.env.REACT_APP_EMAILJS_USER_ID)
 			.then(response => {
 				console.log(`Success! Response status: ${response.status} & text: ${response.text}`);
 				// built in function that clears the form after it succeeds
@@ -97,11 +91,16 @@ class ContactForm extends React.Component {
 						color="primary"
 						className="button"
 						endIcon={<FontAwesomeIcon icon={faPaperPlane}/>}
-						onClick={this.sendEmail}
+						onClick={this.checkRecaptcha}
 						>
 						Send
 					</Button>
 				</div>
+				<Recaptcha 
+					ref={ref => this.recaptcha = ref}
+					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_ID}
+					onResolved={this.onResolved}
+					/>
 			</form>
 		);
 	}
