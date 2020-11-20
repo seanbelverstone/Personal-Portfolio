@@ -9,6 +9,7 @@
 	box-shadow: 5px 5px 5px rgb(129, 129, 129);
 	border-radius: 20px 0 0 20px;
 	opacity: 0.9;
+	padding: 30px;
 }
 
 .MuiGrid-item {

@@ -3,6 +3,10 @@ import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
+import Button from '@material-ui/core/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 import "./style.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+const sendEmail = () => {
+	console.log("egg")
+}
 
 const ContactForm = () => {
   const classes = useStyles();
@@ -29,6 +37,15 @@ const ContactForm = () => {
 				<p id="messageLabel">Enter your message below</p>
 				<TextareaAutosize id="outlined-basic" className="message" label="Message" variant="outlined" rowsMin={6} />
 			</Grid>
+			<Button
+				variant="contained"
+				color="primary"
+				className={classes.button}
+				endIcon={<FontAwesomeIcon icon={faPaperPlane}/>}
+				onClick={sendEmail}
+				>
+				Send
+      		</Button>
       	</div>
     </form>
   );
