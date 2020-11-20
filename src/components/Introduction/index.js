@@ -15,7 +15,7 @@ class Introduction extends React.Component {
 					</Grid>
 					<Grid container justify="center" spacing={2}>
 						<Grid item xs={8}id="introText">
-							<p>I'm a Full Stack Web Developer, and I design and build website applications. Feel free to peruse my projects below, or reach out to me via the contact form.</p>
+							<p>I'm a Full Stack Web Developer, and I design and build website applications. Feel free to peruse my projects or reach out to me via the contact form.</p>
 							
 							<div>I have a number of skills, including: <TextLooper id="textLoop"/></div>
 

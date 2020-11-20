@@ -1,8 +1,8 @@
 import React from "react";
-import Main from "./components/Main";
-import Projects from "./components/Projects";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
+import Main from "./pages/Main";
+import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
 import {
     BrowserRouter as Router,
     Switch,

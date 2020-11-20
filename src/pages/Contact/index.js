@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../Navbar";
+import Navigation from "../../components/Navbar";
 
 const Contact = () => {
 	return(
