@@ -32,8 +32,10 @@
 .message {
 	width: 50%;
 	opacity: 0.9;
+	font-family: "Cabin", sans-serif !important;
+	font-size: 18px;
 }
 
 #messageLabel {
-	font-size: 18px;
+	font-size: 20px;
 }
