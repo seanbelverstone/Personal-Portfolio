@@ -1,0 +1,45 @@
+.formWrapper {
+	padding: 200px 15% 0 15%;
+}
+
+.formContainer {
+	background-color: #e1e1e1;
+	position: relative;
+	border: 2px solid black;
+	box-shadow: 5px 5px 5px rgb(129, 129, 129);
+	border-radius: 20px 0 0 20px;
+	opacity: 0.9;
+	padding: 30px;
+}
+
+.MuiGrid-item {
+	margin: 200px 15% 0 15%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.MuiGrid-root {
+	padding: 20px;
+}
+
+.MuiTextField-root {
+	background-color: white;
+	margin: 20px;
+}
+
+.outlined-basic{
+	font-family: "Cabin", sans-serif !important;
+	background-color: white;
+
+}
+
+.message {
+	width: 50%;
+	opacity: 0.9;
+	font-family: "Cabin", sans-serif !important;
+	font-size: 18px;
+}
+
+#messageLabel {
+	font-size: 20px;
+}

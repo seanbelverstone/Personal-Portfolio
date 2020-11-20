@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCode, faUser, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faGlobeAmericas, faFileCode, faUser, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 
 const useStyles = makeStyles({
@@ -49,7 +49,7 @@ const Navigation = () => {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction href="/" label="Introduction" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
+      <BottomNavigationAction href="/" label="Introduction" icon={<FontAwesomeIcon icon={faGlobeAmericas} className="icons" />} />
       <BottomNavigationAction href="/projects" label="Projects" icon={<FontAwesomeIcon icon={faFileCode} className="icons" />} />
       <BottomNavigationAction href="/about" label="About Me" icon={<FontAwesomeIcon icon={faUser} className="icons" />} />
       <BottomNavigationAction href="/contact" label="Contact" icon={<FontAwesomeIcon icon={faEnvelopeOpenText} className="icons" />} />

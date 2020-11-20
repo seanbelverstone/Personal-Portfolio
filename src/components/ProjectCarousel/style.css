@@ -1,9 +1,13 @@
-.images {
-	width: 50%;
-	margin-top: 100px;
+.images, .textArea {
 	border: 2px solid black;
 	box-shadow: 5px 5px 5px rgb(129, 129, 129);
 	border-radius: 20px 0 0 20px;
+	opacity: 0.9;
+}
+
+.images {
+	width: 50%;
+	margin-top: 100px;
 }
 
 .next, .prev {

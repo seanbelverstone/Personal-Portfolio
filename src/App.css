@@ -1,6 +1,7 @@
 body {
   background-color: whitesmoke;
   margin-bottom: 80px;
+  font-family: "Cabin", sans-serif !important;
 }
 
 .App {
