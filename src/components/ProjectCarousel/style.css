@@ -1,12 +1,16 @@
 .images {
-	width: 60%;
-	margin-top: 120px;
+	width: 50%;
+	margin-top: 100px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 5px rgb(129, 129, 129);
+	border-radius: 20px 0 0 20px;
 }
 
 .next, .prev {
 	top: calc(50% - 20px);
 	position: absolute;
-	background: white;
+	background: #e1e1e1;
+	border: 1px solid black;
 	border-radius: 30px;
 	width: 40px;
 	height: 40px;
@@ -21,12 +25,26 @@
 }
 
 .next {
-	right: 16%;
-    top: 50%;
+	right: 20%;
+    top: 40%;
 }
 
 .prev {
-	left: 16%;
-	top: 50%;
+	left: 20%;
+	top: 40%;
 	transform: scale(-1);
+}
+
+.textArea {
+	background-color: #e1e1e1;
+	margin: 20px 15% 0 15%;
+	padding: 15px;
+}
+
+#projectName {
+	font-size: 40px;
+}
+
+#projectDescription {
+	font-size: 20px;
 }

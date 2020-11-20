@@ -1,4 +1,5 @@
 import * as React from "react";
+import Grid from "@material-ui/core/Grid"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
@@ -86,6 +87,11 @@ const ProjectCarousel = () => {
       <div className="prev" onClick={() => paginate(-1)}>
         {"‣"}
       </div>
+	  <div className="textArea">
+		<h2 id="projectName">{projects[imageIndex].name}</h2>	
+		<p id="projectDescription">{projects[imageIndex].description}</p>
+	  </div>
+
     </>
   );
 };
