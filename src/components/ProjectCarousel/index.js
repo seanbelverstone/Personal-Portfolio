@@ -1,5 +1,4 @@
 import * as React from "react";
-import Grid from "@material-ui/core/Grid"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
@@ -56,8 +55,8 @@ const ProjectCarousel = () => {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
-		  src={projects[imageIndex].src}
-		  className="images"
+		      src={projects[imageIndex].src}
+		      className="images"
           custom={direction}
           variants={variants}
           initial="enter"
