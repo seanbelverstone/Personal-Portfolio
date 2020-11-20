@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 	position: "fixed",
 	zIndex: "2",
 	boxShadow: "2px 2px 2px black",
-	padding: "10px",
+	padding: "2px",
 	opacity: 0.9
 },
 });
