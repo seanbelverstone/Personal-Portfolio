@@ -1,4 +1,32 @@
 .images {
 	width: 60%;
-	margin-top: 100px;
+	margin-top: 120px;
+}
+
+.next, .prev {
+	top: calc(50% - 20px);
+	position: absolute;
+	background: white;
+	border-radius: 30px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	z-index: 2;
+}
+
+.next {
+	right: 16%;
+    top: 50%;
+}
+
+.prev {
+	left: 16%;
+	top: 50%;
+	transform: scale(-1);
 }

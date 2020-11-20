@@ -2,11 +2,11 @@ import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
-import { projects } from "./projects.js";
+import { projects } from "./projectList.js";
 import "./style.css";
 
 const variants = {
-  enter: (direction: Number) => {
+  enter: (direction) => {
     return {
       x: direction > 0 ? 1000 : -1000,
       opacity: 0
@@ -17,7 +17,7 @@ const variants = {
     x: 0,
     opacity: 1
   },
-  exit: (direction: Number) => {
+  exit: (direction) => {
     return {
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
@@ -33,7 +33,7 @@ const variants = {
  * just distance thresholds and velocity > 0.
  */
 const swipeConfidenceThreshold = 10000;
-const swipePower = (offset: Number, velocity: Number) => {
+const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
@@ -46,7 +46,7 @@ const ProjectCarousel = () => {
   // detect it as an entirely new image. So you can infinitely paginate as few as 1 projects.
   const imageIndex = wrap(0, projects.length, page);
 
-  const paginate = (newDirection: Number) => {
+  const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
 

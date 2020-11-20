@@ -1,5 +1,6 @@
 import biscuits from "../../assets/images/biscuits.png";
 import reelTime from "../../assets/images/reelTime.png";
+import lotr from "../../assets/images/lotr.png";
 
 export const projects = [
 	{
@@ -13,7 +14,7 @@ export const projects = [
 		description: ""
 	},
 	{
-		src: biscuits,
+		src: lotr,
 		name: "Thanksgiving Biscuits",
 		description: ""
 	}	
