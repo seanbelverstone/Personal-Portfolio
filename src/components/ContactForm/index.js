@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import { makeStyles } from '@material-ui/core/styles';
@@ -29,7 +29,24 @@ const ContactForm = () => {
 	
 
 	const sendEmail = () => {
-		return console.log(`Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}`);
+		const data = {
+			name: name,
+			email: email,
+      		phone: phone,
+      		message: message
+		};
+		
+		console.log(data);
+		emailjs.send("gmail", "portfolio_template", data, "user_hCtShpO14VJ1zNpxU2xRi")
+			.then(response => {
+				console.log(`Success! Response status: ${response.status} & text: ${response.text}`);
+				setName("");
+				setPhone("");
+				setEmail("");
+				setMessage("");
+			}, (err => {
+				console.log("Whoops, that failed.")
+			}));
 	}
 
   return (
