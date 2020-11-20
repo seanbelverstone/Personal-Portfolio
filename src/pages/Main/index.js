@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeAmericas, faSpinner } from '@fortawesome/free-solid-svg-icons';
-import Navigation from "../Navbar";
-import Introduction from "../Introduction";
+import Navigation from "../../components/Navbar";
+import Introduction from "../../components/Introduction";
 import "./style.css";
 
 const Main = () => {

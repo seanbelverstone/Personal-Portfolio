@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../Navbar";
-import Map from "../Map";
+import Navigation from "../../components/Navbar";
+import Map from "../../components/Map";
 
 const AboutMe = () => {
 	return(
