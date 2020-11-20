@@ -1,14 +1,13 @@
 import React from "react";
 import Navigation from "../Navbar";
-import Map from "../Map";
 
-const AboutMe = () => {
+const Contact = () => {
 	return(
 		<div>
 			<Navigation />
-				<Map />	
+			Contact me	
 		</div>
 	)
 }
 
-export default AboutMe;
+export default Contact;
