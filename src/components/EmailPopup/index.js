@@ -37,7 +37,7 @@ const EmailPopup = (props) => {
     <div className={classes.root}>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
-          This is a success message!
+          Your email was sent successfully!
         </Alert>
       </Snackbar>
     </div>

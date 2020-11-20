@@ -9,6 +9,7 @@
 	color: white;
 	width: 100%;
 	z-index: 2;
+	height: max-content;
 }
 
 .name {
@@ -64,12 +65,26 @@
 
 }
 @media only screen and (max-width: 768px) {
-	
-}
+	.name {
+		font-size: 60px !important;
+	}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
+	#role {
+		font-size: 40px !important;
+		margin-bottom: 50px !important;
+	}
+
+	#enter {
+		width: 150px;
+	}
+
+	.fa-spinner {
+		width: 12px !important;
+	}
+
+	#spinner {
+		top: 55% !important;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -89,7 +104,7 @@
 
 	#spinner {
 		left: 50%;
-		top: 57%;
+		top: 59%;
 	}
 
 	#enter {
@@ -98,6 +113,6 @@
 
 	#role {
 		margin-top: 20px;
-		margin-bottom: fit-content;
+		margin-bottom: 50px;
 	}
 }
