@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import emailjs from "emailjs-com"
 import "./style.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -30,8 +31,6 @@ const ContactForm = () => {
 	const sendEmail = () => {
 		return console.log(`Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}`);
 	}
-
-
 
   return (
     <form className={classes.root} noValidate autoComplete="off" id="formWrapper">
