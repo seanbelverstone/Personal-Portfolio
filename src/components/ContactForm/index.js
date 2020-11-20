@@ -77,14 +77,14 @@ class ContactForm extends React.Component {
 		return (
 			<form className="formWrapper" noValidate autoComplete="off" ref={c => this.form = c}>
 				<div className="formContainer">
-					<Grid item xs={12}>
-						<TextField id="outlined-basic" value={this.state.name} onChange={this.changeHandler} label="Name" name="name" variant="outlined" />
-						<TextField id="outlined-basic" value={this.state.email} onChange={this.changeHandler} label="Email" name="email" variant="outlined" />
-						<TextField id="outlined-basic" value={this.state.phone} onChange={this.changeHandler} label="Phone" name="phone" variant="outlined" />
+					<Grid item xs={12} id="topLine">
+						<TextField className="outlined-basic" id="name" value={this.state.name} onChange={this.changeHandler} label="Name" name="name" variant="outlined" />
+						<TextField className="outlined-basic" id="email" value={this.state.email} onChange={this.changeHandler} label="Email" name="email" variant="outlined" />
+						<TextField className="outlined-basic" id="phone" value={this.state.phone} onChange={this.changeHandler} label="Phone" name="phone" variant="outlined" />
 					</Grid>
 					<Grid>
 						<p id="messageLabel">Enter your message below</p>
-						<TextareaAutosize id="outlined-basic" value={this.state.message} onChange={this.changeHandler} className="message" label="Message" name="message" variant="outlined" rowsMin={6} />
+						<TextareaAutosize className="outlined-basic" id="message" value={this.state.message} onChange={this.changeHandler} label="Message" name="message" variant="outlined" rowsMin={6} />
 					</Grid>
 					<Button
 						variant="contained"

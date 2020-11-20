@@ -12,8 +12,7 @@
 	padding: 30px;
 }
 
-.MuiGrid-item {
-	margin: 200px 15% 0 15%;
+#topLine {
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -30,10 +29,9 @@
 .outlined-basic{
 	font-family: "Cabin", sans-serif !important;
 	background-color: white;
-
 }
 
-.message {
+#message {
 	width: 50%;
 	opacity: 0.9;
 	font-family: "Cabin", sans-serif !important;
