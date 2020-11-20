@@ -99,7 +99,7 @@ class ContactForm extends React.Component {
 				<Recaptcha 
 					ref={ref => this.recaptcha = ref}
 					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_ID}
-					onResolved={this.onResolved}
+					onResolved={this.sendEmail}
 					/>
 			</form>
 		);
