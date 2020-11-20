@@ -56,3 +56,48 @@
 	margin-right: 150px;
 	font-weight: 100;
 }
+
+/* *** MEDIA QUERIES *** */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 460px) {
+
+}
+@media only screen and (max-width: 768px) {
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.name {
+		text-align: center !important;
+
+	}
+
+}
+
+@media only screen and (max-width: 1388px) {
+	.name {
+		font-size: 100px;
+		margin: 20px 20px 0 50px;
+	}
+
+	#spinner {
+		left: 50%;
+		top: 57%;
+	}
+
+	#enter {
+		left: 13%;
+	}
+
+	#role {
+		margin-top: 20px;
+		margin-bottom: fit-content;
+	}
+}
