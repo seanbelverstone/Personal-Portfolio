@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
-import Map from "../Map";
 import TextLooper from "../TextLooper";
 import lookingAtTheSea from "../../assets/images/lookingAtTheSea.jpg"
 import "./style.css";
@@ -26,8 +25,6 @@ class Introduction extends React.Component {
 						</Grid>
 					</Grid>
 				</Grid>
-				{/* Animated map below */}
-				<Map />
 			</div>
 		)
 	}
