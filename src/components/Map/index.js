@@ -49,7 +49,6 @@ const Map = () => {
 				<div id="lines" style={{opacity: opacity}}>------</div>
 				<div id="journeyText" style={{opacity: opacity}}>
 					I moved to Austin in 2018 to be with my wife,
-					<br />
 					so we could start building our lives together.
 				</div>
 			</div>
