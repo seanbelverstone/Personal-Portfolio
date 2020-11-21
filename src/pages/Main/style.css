@@ -5,6 +5,7 @@
 
 #mainBlock {
 	position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
 	background-color: black;
 	color: white;
 	width: 100%;
@@ -124,7 +125,9 @@
 
 @media only screen and (max-width: 500px) {
 	#spinner {
-		top: 45%; 
+		top: 44%; 
+		left: 52%;
+		width: 14px;
 	}
 
 }
