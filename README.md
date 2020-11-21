@@ -22,4 +22,4 @@ If you wish to install this application yourself, please follow the instructions
 2. Install all necessary packages by typing `$ npm i` into your command line.
 
 
-You can visit a live version of my porfolio [here](http://www.seanbelverstone.com/).
+You can visit a live version of my porfolio [here](https://www.seanbelverstone.com/).
