@@ -49,8 +49,13 @@
 	font-size: 40px;
 }
 
-#projectDescription {
+#projectDescription, #projectLinks {
 	font-size: 20px;
+}
+
+#projectLinks {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* *** MEDIA QUERIES *** */
