@@ -2,12 +2,25 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import TextLooper from "../TextLooper";
 import lookingAtTheSea from "../../assets/images/lookingAtTheSea.jpg"
+import githubLogo from "../../assets/images/githubLogo";
+import linkedInLogo from "../../assets/images/linkedin.png";
 import "./style.css";
 
 class Introduction extends React.Component {
 	render() {
 		return(
 			<div>
+				<Grid className="links">
+					<a className="logo" href="https://github.com/seanbelverstone">
+                        <img src={githubLogo} alt="GitHub logo" id="github" />
+                    </a>
+                    <a className="logo" href="https://www.linkedin.com/in/sean-belverstone/">
+                        <img src={linkedInLogo} alt="LinkedIn logo" id="linkedin" />
+                    </a>
+                    <a className="logo" href="https://drive.google.com/file/d/1fXTNVPvD0wRBIUyHc-Y8QWaxbEOjTLP0/view?usp=sharing" id="cv">
+                        CV
+                    </a>
+				</Grid>
 				<Grid className="introduction" navigation="introduction">
 					<Grid item xs={12}>
 						<p id="firstLine">Hi there, my name is</p>
