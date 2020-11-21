@@ -86,6 +86,10 @@
 	.fa-spinner {
 		width: 12px !important;
 	}
+
+	#spinner {
+		top: 50% !important;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
