@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import TextLooper from "../TextLooper";
 import lookingAtTheSea from "../../assets/images/lookingAtTheSea.jpg"
-import githubLogo from "../../assets/images/githubLogo";
+import githubLogo from "../../assets/images/github.png";
 import linkedInLogo from "../../assets/images/linkedin.png";
 import "./style.css";
 
@@ -10,7 +10,8 @@ class Introduction extends React.Component {
 	render() {
 		return(
 			<div>
-				<Grid className="links">
+				<Grid className="introduction" navigation="introduction">
+				<Grid item xs={12} className="links">
 					<a className="logo" href="https://github.com/seanbelverstone">
                         <img src={githubLogo} alt="GitHub logo" id="github" />
                     </a>
@@ -21,7 +22,6 @@ class Introduction extends React.Component {
                         CV
                     </a>
 				</Grid>
-				<Grid className="introduction" navigation="introduction">
 					<Grid item xs={12}>
 						<p id="firstLine">Hi there, my name is</p>
 						<p id="title">Sean Belverstone</p>

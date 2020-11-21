@@ -10,6 +10,51 @@
 	text-align: center;
 }
 
+.links {
+	display: flex;
+	justify-content: space-around;
+}
+
+#github, #linkedin, #cv {
+	box-shadow: 5px 5px 5px rgb(129, 129, 129);
+}
+
+#github {
+	width: 32px;
+	height: auto;
+	background-color: white;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+#linkedin {
+	width: 32px;
+	height: auto;
+	border-radius: 15px;
+	border: white solid 2px;
+}
+
+#cv {
+	color: white;
+	width: 32px;
+	font-size: 20px;
+	padding: 4px;
+	background-color: black;
+	border: white solid 2px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+a:hover {
+	transition: 500ms;
+	opacity: 0.5;
+	color: gray;
+  }
+  
+a:active {
+	opacity: 0.2;
+}
+
 div.x0 {
 	font-weight: bolder;
 }
