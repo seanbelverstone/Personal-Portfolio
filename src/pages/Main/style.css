@@ -65,6 +65,10 @@
 
 }
 @media only screen and (max-width: 768px) {
+	#mainBlock {
+		height: 100%;
+	}
+
 	.name {
 		font-size: 60px !important;
 	}
@@ -72,6 +76,7 @@
 	#role {
 		font-size: 40px !important;
 		margin-bottom: 50px !important;
+		margin-right: 20%;
 	}
 
 	#enter {
@@ -80,10 +85,6 @@
 
 	.fa-spinner {
 		width: 12px !important;
-	}
-
-	#spinner {
-		top: 55% !important;
 	}
 }
 
