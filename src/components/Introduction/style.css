@@ -38,3 +38,46 @@ div.x0 {
 	margin: 40px 0 0 0;
 	margin-bottom: 0px;
 }
+
+/* *** MEDIA QUERIES *** */
+
+@media only screen and (max-width: 1388px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+
+	.introduction {
+		margin-right: 0%;
+		margin-left: 0%;
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+	#title {
+		font-size: 50px;
+		margin-right: 0;
+	}
+
+	.MuiGrid-root {
+		padding: 0;
+	}
+	
+	#introText {
+		font-size: 20px;
+	}
+
+	#me {
+		height: 
+	}
+
+}

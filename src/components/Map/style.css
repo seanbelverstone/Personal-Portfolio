@@ -45,9 +45,133 @@
 
 #journeyText {
 	font-size: 30px;
-    left: 40%;
+    left: 14%;
 	bottom: 25%;
 	background-color: darkgray;
 	transition: opacity 1s ease-in-out;
 	padding: 20px;
+}
+
+/* *** MEDIA QUERIES *** */
+
+@media only screen and (max-width: 1388px) {
+	#journeyText {
+		width: 75%;
+		left: 10%;
+		bottom: 11%;
+	}
+
+	#pin1, #pin2 {
+		width: 80px;
+	}
+
+	#pin1 {
+		top: 23%;
+		left: 45.5%;
+	}
+
+	#pin2 {
+		top: 31%;
+		left: 28%;	
+	}
+
+	#lines {
+		font-size: 70px;
+		left: 34%;
+		bottom: 52%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+	#journeyText {
+		font-size: 24px;
+		width: 75%;
+		left: 10%;
+		bottom: 11%;
+	}
+
+	#pin1, #pin2 {
+		width: 60px;
+	}
+
+	#pin1 {
+		top: 27%;
+		left: 45%;
+	}
+
+	#pin2 {
+		top: 33%;
+		left: 28%;	
+	}
+
+	#lines {
+		font-size: 45px;
+		left: 33%;
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+
+	#journeyText {
+		font-size: 18px;
+		width: 75%;
+		left: 7%;
+		bottom: 4%;
+	}
+
+	#pin1, #pin2 {
+		width: 60px;
+	}
+
+	#pin1 {
+		top: 27%;
+    	left: 43.5%;
+	}
+
+	#pin2 {
+		top: 32%;
+		left: 26%;
+	}
+
+	#lines {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#map {
+		width: 70%;
+	}
+
+
+	.makeStyles-root-2 {
+		width: 100%;
+		margin: 0;
+		align-self: center;
+	}
+
+	#pin1, #pin2 {
+		width: 40px;
+	}
+
+	#pin1 {
+		top: 33%;
+    	left: 43%;
+	}
+
+	#pin2 {
+		top: 37%;
+    	left: 25%;
+	}
+
+	#lines {
+		font-size: 25px;
+		left: 32%;
+		bottom: 50%;
+	}
+
 }

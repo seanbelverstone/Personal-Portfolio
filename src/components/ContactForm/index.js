@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import Recaptcha from "react-google-invisible-recaptcha";
 import emailjs from "emailjs-com"
+import EmailPopup from "../EmailPopup";
 import "./style.css";
 
 class ContactForm extends React.Component {
@@ -26,8 +27,8 @@ class ContactForm extends React.Component {
 				message: {
 					value: ""
 				},
-			}
-			
+			},
+			emailSent: false
 		}
 		this.changeHandler = this.changeHandler.bind(this);
 	}	
@@ -68,6 +69,9 @@ class ContactForm extends React.Component {
 				console.log(`Success! Response status: ${response.status} & text: ${response.text}`);
 				// built in function that clears the form after it succeeds
 				this.form.reset();
+				this.setState({
+					emailSent: true
+				})
 			}, (err => {
 				console.log("Whoops, that failed.")
 			}));
@@ -99,8 +103,9 @@ class ContactForm extends React.Component {
 				<Recaptcha 
 					ref={ref => this.recaptcha = ref}
 					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_ID}
-					onResolved={this.onResolved}
+					onResolved={this.sendEmail}
 					/>
+				<EmailPopup emailSent={this.state.emailSent}/>
 			</form>
 		);
 	}
