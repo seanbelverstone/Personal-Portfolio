@@ -86,9 +86,18 @@ const ProjectCarousel = () => {
       <div className="prev" onClick={() => paginate(-1)}>
         {"‣"}
       </div>
-	  <div className="textArea">
-		<h2 id="projectName">{projects[imageIndex].name}</h2>	
-		<p id="projectDescription">{projects[imageIndex].description}</p>
+        <div className="textArea">
+        <h2 id="projectName">{projects[imageIndex].name}</h2>	
+        <p id="projectDescription">{projects[imageIndex].description}</p>
+        <div id="projectLinks">
+          <a id="liveLink" href={projects[imageIndex].liveLink}>
+            <p>Live</p>
+          </a>
+          <p>|</p>
+          <a id="githubLink" href={projects[imageIndex].githubLink}>
+            <p>GitHub</p>
+          </a>
+        </div>
 	  </div>
 
     </>
