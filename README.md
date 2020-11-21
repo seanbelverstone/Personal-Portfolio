@@ -12,6 +12,7 @@ NPM Packages used:
 - Icons from FontAwesome
 - Material-UI
 - Framer Motion
+- Particles.js
 - React Text Loop
 
 ### Installation
