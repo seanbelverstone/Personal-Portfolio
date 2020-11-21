@@ -52,3 +52,29 @@
 #projectDescription {
 	font-size: 20px;
 }
+
+/* *** MEDIA QUERIES *** */
+
+@media only screen and (max-width: 1388px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.images {
+		width: 90%;
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+	#projectName {
+		font-size: 30px;
+	}
+
+}
