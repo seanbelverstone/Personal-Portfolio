@@ -60,47 +60,6 @@
 
 /* *** MEDIA QUERIES *** */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 460px) {
-
-}
-@media only screen and (max-width: 768px) {
-	#mainBlock {
-		height: 100%;
-	}
-
-	.name {
-		font-size: 60px !important;
-	}
-
-	#role {
-		font-size: 40px !important;
-		margin-bottom: 50px !important;
-		margin-right: 20%;
-	}
-
-	#enter {
-		width: 150px;
-	}
-
-	.fa-spinner {
-		width: 12px !important;
-	}
-
-	#spinner {
-		top: 50% !important;
-	}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-	.name {
-		text-align: center !important;
-
-	}
-
-}
-
 @media only screen and (max-width: 1388px) {
 	.name {
 		font-size: 100px;
@@ -120,4 +79,52 @@
 		margin-top: 20px;
 		margin-bottom: 50px;
 	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.name {
+		text-align: center;
+
+	}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+	#mainBlock {
+		height: 100%;
+		width: 100%;
+	}
+
+	.name {
+		font-size: 60px;
+		margin-left: 20px;
+	}
+
+	#role {
+		font-size: 40px;
+		margin-bottom: 50px;
+		margin-right: 24%;
+	}
+
+	#enter {
+		width: 150px;
+	}
+
+	.fa-spinner {
+		width: 12px;
+	}
+
+	#spinner {
+		top: 45%;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#spinner {
+		top: 45%; 
+	}
+
 }
