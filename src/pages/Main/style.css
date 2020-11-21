@@ -131,3 +131,29 @@
 	}
 
 }
+
+@media only screen and (max-width: 340px) {
+	#spinner {
+		top: 38%; 
+		left: 48%;
+		width: 10px;
+		font-size: 8px;
+	}
+
+	.name {
+		font-size: 40px;
+		margin-left: 0px;
+	}
+
+	#enter {
+		width: 115px;
+		left: 0;
+	}
+
+	#role {
+		font-size: 30px;
+		text-align: center;
+		margin-right: 0;
+	}
+
+}
