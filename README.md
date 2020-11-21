@@ -4,7 +4,7 @@ Created using [React](https://reactjs.org/), styled using components from [Mater
 
 A webpage that demonstrates my best projects, contains interactive animations, and a fully functional message form. 
 
-My portfolio uses the following libraries:
+NPM Packages used:
 
 - React
 - EmailJS
