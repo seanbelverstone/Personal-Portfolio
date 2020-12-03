@@ -133,9 +133,28 @@
 		left: 28%;	
 	}
 
-	#plane {
-		font-size: 45px;
-		left: 33%;
+	@keyframes planeAnimation {
+		0% {
+			left: 46%;
+			bottom: 60%;
+			font-size: 0;
+		}
+		5% {
+			font-size: 70px;
+		}
+		40% {
+			font-size: 70px;
+	
+		}
+		75% {
+			
+	
+		}
+		100% {
+			left: 32%;
+			bottom: 55%;
+			font-size: 0;
+		}
 	}
 
 }
@@ -164,14 +183,34 @@
 		left: 26%;
 	}
 
-	#plane {
-		font-size: 30px;
+	@keyframes planeAnimation {
+		0% {
+			left: 47%;
+    		bottom: 57%;
+			font-size: 0;
+		}
+		5% {
+			font-size: 45px;
+		}
+		40% {
+			font-size: 45px;
+	
+		}
+		75% {
+			
+	
+		}
+		100% {
+			left: 30%;
+    		bottom: 54%;
+			font-size: 0;
+		}
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	#map {
-		width: 70%;
+		width: 80%;
 	}
 
 
