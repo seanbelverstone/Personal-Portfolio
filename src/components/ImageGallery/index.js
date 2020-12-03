@@ -95,8 +95,8 @@ const ImageGallery = () => {
         ))}
       </GridList>
 	  {/* this backdrop shows when the eye is clicked */}
-	  <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
-        <img src={imgSrc} alt="the same as before, just focused" style={{width: "50%"}}/>
+	  <Backdrop className={classes.backdrop} open={open} onClick={handleClose} id="backdrop">
+        <img src={imgSrc} alt="the same as before, just focused" style={{width: "50%"}} className="images"/>
       </Backdrop>
     </div>
   );
