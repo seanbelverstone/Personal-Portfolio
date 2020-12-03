@@ -123,6 +123,15 @@
 		left: 34%;
 		bottom: 52%;
 	}
+
+	#imageTextArea {
+		display: block;
+	}
+
+	#myText {
+		width: 100%;
+		text-align: left;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -199,6 +208,10 @@
 		left: 26%;
 	}
 
+	#imageTextArea {
+		margin: 0;
+	}
+
 	@keyframes planeAnimation {
 		0% {
 			left: 47%;
@@ -226,7 +239,7 @@
 
 @media only screen and (max-width: 500px) {
 	#map {
-		width: 80%;
+		width: 75%;
 	}
 
 
@@ -254,6 +267,10 @@
 		font-size: 25px;
 		left: 32%;
 		bottom: 50%;
+	}
+
+	#imageTextArea {
+		padding: 20px;
 	}
 
 }

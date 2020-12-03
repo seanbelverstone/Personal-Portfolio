@@ -3,8 +3,7 @@
 }
 
 .makeStyles-gridList-3 {
-	width: 800px;
-	height: 800px;
+	height: 550px !important;
 	border-radius: 20px 0 0 20px;
 	border: 2px solid black;
 	box-shadow: 5px 5px 5px rgb(129, 129, 129);
