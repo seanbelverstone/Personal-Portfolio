@@ -77,9 +77,8 @@ const Map = () => {
 					<p>Using the skills I gained through the bootcamp, I was hired by the owner of Bird Bird Biscuit to create
 						a Thanksgiving themed ordering form, where guests can place orders in 6 packs. It went off without a
 						hitch, and we ended up selling just under a thousand biscuits! For my first freelance project, I'm very
-						proud of the work I put in. If you want to check out my other projects, head over to my 
-						<a href="https://github.com/seanbelverstone"> GitHub</a> or look at my 3 best on the 
-						<a href="/projects"> Projects page</a>.
+						proud of the work I put in. If you want to check out my other projects, head over to my <a href="https://github.com/seanbelverstone">GitHub</a> or
+						 look at my 3 best on the <a href="/projects"> Projects page</a>.
 					</p>
 					<h3>Thank you for taking the time to view my portfolio and please use the <a href="/contact">Contact page</a> if you'd
 					 like to reach out!</h3>
