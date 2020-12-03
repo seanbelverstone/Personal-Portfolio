@@ -55,7 +55,14 @@ const Map = () => {
 				</div>
 			</div>
 			{/* Interactive images go below */}
-			<ImageGallery />
+			<div id="imageTextArea">
+				<ImageGallery />
+				<p id="myText">As an English native and having experience that was almost exclusively based in the food
+					and beverage industry, moving careers was a big decision, but one that I took to quickly.
+
+				</p>
+			</div>
+
 		</div>
 	)
 }

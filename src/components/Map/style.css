@@ -79,6 +79,22 @@
 	padding: 20px;
 }
 
+#imageTextArea {
+	background-color: #e1e1e1;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(129, 129, 129);
+	border-radius: 20px 0 0 20px;
+	padding: 40px;
+}
+
+#myText {
+	width: 40%;
+}
+
 /* *** MEDIA QUERIES *** */
 
 @media only screen and (max-width: 1388px) {
