@@ -16,7 +16,7 @@
 	opacity: 0.8;
 }
 
-#pin1, #pin2, #lines, #journeyText {
+#pin1, #pin2, #plane, #journeyText {
 	position: absolute;
 }
 
@@ -34,13 +34,40 @@
 	height: auto;
 }
 
-#lines {
-    font-size: 123px;
-    color: red;
+#plane {
+    font-size: 100px;
+	color: cornflowerblue;
     left: 32.5%;
-    bottom: 51%;
-    transform: rotate(350deg);
-    transition: opacity 1s ease-in-out;
+	bottom: 51%;
+	transform: rotate(165deg);
+	transition: opacity 1s ease-in-out;
+	animation-name: planeAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes planeAnimation {
+	0% {
+		left: 46%;
+		bottom: 60%;
+		font-size: 0;
+	}
+	5% {
+		font-size: 100px;
+	}
+	40% {
+		font-size: 100px;
+
+	}
+	75% {
+		
+
+	}
+	100% {
+		left: 32%;
+		bottom: 55%;
+		font-size: 0;
+	}
 }
 
 #journeyText {
@@ -75,7 +102,7 @@
 		left: 28%;	
 	}
 
-	#lines {
+	#plane {
 		font-size: 70px;
 		left: 34%;
 		bottom: 52%;
@@ -106,9 +133,28 @@
 		left: 28%;	
 	}
 
-	#lines {
-		font-size: 45px;
-		left: 33%;
+	@keyframes planeAnimation {
+		0% {
+			left: 46%;
+			bottom: 60%;
+			font-size: 0;
+		}
+		5% {
+			font-size: 70px;
+		}
+		40% {
+			font-size: 70px;
+	
+		}
+		75% {
+			
+	
+		}
+		100% {
+			left: 32%;
+			bottom: 55%;
+			font-size: 0;
+		}
 	}
 
 }
@@ -137,14 +183,34 @@
 		left: 26%;
 	}
 
-	#lines {
-		font-size: 30px;
+	@keyframes planeAnimation {
+		0% {
+			left: 47%;
+    		bottom: 57%;
+			font-size: 0;
+		}
+		5% {
+			font-size: 45px;
+		}
+		40% {
+			font-size: 45px;
+	
+		}
+		75% {
+			
+	
+		}
+		100% {
+			left: 30%;
+    		bottom: 54%;
+			font-size: 0;
+		}
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	#map {
-		width: 70%;
+		width: 80%;
 	}
 
 
@@ -168,7 +234,7 @@
     	left: 25%;
 	}
 
-	#lines {
+	#plane {
 		font-size: 25px;
 		left: 32%;
 		bottom: 50%;

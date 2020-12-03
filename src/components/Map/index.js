@@ -3,6 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import ImageGallery from "../ImageGallery";
 import map from "../../assets/images/map.png";
 import pin from "../../assets/images/pin.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlane } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 
 const Map = () => {
@@ -46,7 +48,7 @@ const Map = () => {
 				<img id="map" src={map} alt="a world map" />
 				<motion.img id="pin1" src={pin} alt="a pin" animate={controls} initial={{opacity: 0}}/>
 				<motion.img id="pin2" src={pin} alt="a pin" animate={controls} initial={{opacity: 0}}/>
-				<div id="lines" style={{opacity: opacity}}>------</div>
+				<FontAwesomeIcon icon={faPlane} id="plane" style={{opacity: opacity}}></FontAwesomeIcon>
 				<div id="journeyText" style={{opacity: opacity}}>
 					I moved to Austin in 2018 to be with my wife,
 					so we could start building our lives together.
