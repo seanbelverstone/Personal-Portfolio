@@ -2,6 +2,13 @@
 	border: 2px solid black;
 	box-shadow: 5px 5px 5px rgb(129, 129, 129);
 	border-radius: 20px 0 0 20px;
+}
+
+.images {
+	opacity: 1;
+}
+
+.textArea {
 	opacity: 0.9;
 }
 
