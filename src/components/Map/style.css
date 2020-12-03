@@ -93,6 +93,11 @@
 
 #myText {
 	width: 40%;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 /* *** MEDIA QUERIES *** */
@@ -210,6 +215,10 @@
 
 	#imageTextArea {
 		margin: 0;
+	}
+
+	#myText {
+		font-size: 18px;
 	}
 
 	@keyframes planeAnimation {

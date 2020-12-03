@@ -3,7 +3,7 @@
 }
 
 .makeStyles-gridList-3 {
-	height: 550px !important;
+	height: 800px !important;
 	border-radius: 20px 0 0 20px;
 	border: 2px solid black;
 	box-shadow: 5px 5px 5px rgb(129, 129, 129);
@@ -16,7 +16,9 @@
 /* *** MEDIA QUERIES *** */
 
 @media only screen and (max-width: 1388px) {
-
+	.makeStyles-gridList-3 {
+		height: 550px !important;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
