@@ -55,7 +55,36 @@ const Map = () => {
 				</div>
 			</div>
 			{/* Interactive images go below */}
-			<ImageGallery />
+			<div id="imageTextArea">
+				<ImageGallery />
+				<div id="myText">
+					<p>As an English native and having experience that was almost exclusively based in the food
+						and beverage industry, moving careers was a big decision, but one that I took to quickly.
+					</p>
+					<p>
+						After getting married in 2016, my wife and I moved to Austin in 2018, and I began working
+						at a small biscuit sandwich shop called <b>Bird Bird Biscuit</b>. Since then I've recieved a
+						promotion to the role of manager and I'm lucky enough to be one of the chief biscuit makers!
+					</p>
+					<p>
+						I then went on to complete a Full Stack Web Development Bootcamp at UT Austin, and graduated
+						with flying colors. <b>JavaScript</b> makes sense to me on a logical level, and although we all had
+						some difficulties along the way (looking at you, <b>Redux</b>), overall I greatly enjoyed
+						learning my first programming language. Since then I've been focusing most of my attention on refining
+						my fundamental skills, ironing out any <b>React</b> creases, and learning <b>PHP</b> with a focus on 
+						<b> Laravel</b>.
+					</p>
+					<p>Using the skills I gained through the bootcamp, I was hired by the owner of Bird Bird Biscuit to create
+						a Thanksgiving themed ordering form, where guests can place orders in 6 packs. It went off without a
+						hitch, and we ended up selling just under a thousand biscuits! For my first freelance project, I'm very
+						proud of the work I put in. If you want to check out my other projects, head over to my <a href="https://github.com/seanbelverstone">GitHub</a> or
+						 look at my 3 best on the <a href="/projects"> Projects page</a>.
+					</p>
+					<h3>Thank you for taking the time to view my portfolio and please use the <a href="/contact">Contact page</a> if you'd
+					 like to reach out!</h3>
+				</div>
+			</div>
+
 		</div>
 	)
 }
