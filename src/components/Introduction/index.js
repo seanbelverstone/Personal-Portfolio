@@ -15,11 +15,11 @@ class Introduction extends React.Component {
 					<a className="logo" href="https://github.com/seanbelverstone">
                         <img src={githubLogo} alt="GitHub logo" id="github" />
                     </a>
+					<a className="logo" href="https://drive.google.com/file/d/1fXTNVPvD0wRBIUyHc-Y8QWaxbEOjTLP0/view?usp=sharing" id="resume">
+                        Resume
+                    </a>
                     <a className="logo" href="https://www.linkedin.com/in/sean-belverstone/">
                         <img src={linkedInLogo} alt="LinkedIn logo" id="linkedin" />
-                    </a>
-                    <a className="logo" href="https://drive.google.com/file/d/1fXTNVPvD0wRBIUyHc-Y8QWaxbEOjTLP0/view?usp=sharing" id="cv">
-                        CV
                     </a>
 				</Grid>
 					<Grid item xs={12}>
