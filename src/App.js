@@ -9,7 +9,11 @@ import {
     Route,
   } from "react-router-dom";
 import Particles from 'react-particles-js';
+import ReactGA from "react-ga";
 import './App.css';
+
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_KEY);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
     return (
