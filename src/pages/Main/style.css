@@ -40,6 +40,10 @@
 	z-index: 10;
 }
 
+#enter:hover, #spinner:hover {
+		cursor: pointer; 
+}
+
 #spinner {
 	color: rgb(50, 46, 73);
 	align-self: center;
